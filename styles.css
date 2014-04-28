@@ -1,0 +1,50 @@
+#container {
+  width:1280px;
+  height:950px;
+  padding:20px;
+  margin:0 auto;
+  padding:0;
+  border:solid;
+}
+
+#panelInput{
+  width:470px;
+  padding-left:10px;
+  height:625px;
+  float:left;
+}
+
+#panelCanvas{
+  width:800px;
+  height:625px;
+  float:left;
+}
+
+#header{
+  width:1280px;
+  height:25px;
+  float:left;
+}
+
+#footer{
+  width:1280px;
+  height:325px;
+  float:left;
+}
+
+#velocity{
+  width:450px;
+}
+
+textarea{
+  resize:none;
+  width: 450px;
+}
+
+h1{
+  margin:0;
+}
+
+select{
+  width: 455px;
+}

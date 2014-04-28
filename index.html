@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Robot Digger 3000</title>
+		<link rel="stylesheet" href="styles.css" />
+		<script src="jquery-2.1.0.min.js"></script>
+		<script src="peg-0.8.0.min.js"></script>
+		<script src="main.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<div id="panelInput">
+				<h1>Robot Digger 3000</h1><br />
+				Select Map:<br />
+				<select id="maps"></select><br />
+				<!-- FUTURE INPUT FOR DEFINE CONSTANT
+				<br />Define:<br />
+				<textarea rows="5" cols="48" id="defineTxt"></textarea><br /> 
+				-->
+				<br />Execute:<br />
+				<textarea rows="5" cols="48" id="logicTxt"></textarea><br />
+				<br /><input type="button" id="execute" value="Execute" />
+				<input type="button" id="reset" value="Reset" /><br /><br />
+				<input type="text" placeholder="Robot Velocity (Default 200)"
+				id="velocity" /><br /><br />
+				<input type="button" id="clear" value="Clear Saved Game" />
+				<br /><br />Log:<br />
+				<textarea rows="5" cols="48" id="logTxt" disabled></textarea>
+				<br />
+			</div>
+			<div id="panelCanvas">
+				<canvas id="gameCanvas" width=800 height=600></canvas>
+			</div>
+			<span id="footer">
+				You are a robot and need to dig and find a golden nugget. You
+				can perform a limit of moviments and can store a limit of
+				instructions denoted by the robot's battery and memory.
+				To control the robot you need to program him using the left
+				panels.<br /><br />
+				Robot Moviments:<br />
+				move forward, move backward, rotate left, rotate right
+				<br /><br />
+				Control Operations:<br />
+				repeat n times instruction<br />
+				if condition instruction<br />
+				if condition instruction else instruction<br /><br />
+				Conditions:<br />
+				wall ahead, rock ahead, no wall ahead, no rock ahead<br /><br />
+				Instructions:<br />
+				A instruction can be a moviment, a control operation or a block
+				of instructions: { instructions }<br /><br />
+			</span>
+		</div>
+	</body>
+</html>
